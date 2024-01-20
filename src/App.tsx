@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
+import "./App.css";
+import { MyButton } from "src/components/MyButton";
+import { DummyComponent1 } from "src/components/DummyComponent1";
+import { DummyComponent2 } from "src/components/dummy-components/DummyComponent2";
+import { DummyComponent3 } from "src/components/dummy-components/DummyComponent3";
+import { DummyComponent4 } from "src/components/DummyComponent4";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <MyButton onClick={() => alert("I am a re-usable button")}>
+        Click Me
+      </MyButton>
+      <hr />
+      <DummyComponent1 />
+      <hr />
+      <DummyComponent2 />
+      <hr />
+      <DummyComponent3 />
+      <hr />
+      <DummyComponent4 />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
