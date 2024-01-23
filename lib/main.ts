@@ -1,3 +1,10 @@
-export function helloAnything(thing: string): string {
-  return `Hello ${thing}!`;
-}
+export { Button } from "./components/Button";
+export { Input } from "./components/Input";
+export { Label } from "./components/Label";
+export { TraditionalButton } from "./components/TraditionalButton";
+export { MiniatureLibraryButton } from "./components/MiniatureLibraryButton";
+export { DummyComponent1 } from "./components/DummyComponent1";
+export { DummyComponent2 } from "./components/DummyComponent2";
+export { DummyComponent3 } from "./components/DummyComponent3";
+export { Steps } from "./components/Steps";
+export type { StepsDataProps } from "./components/Steps";
